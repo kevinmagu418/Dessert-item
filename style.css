@@ -129,3 +129,23 @@ margin-left: 5px;
   text-align: center;
   margin-left:5px ;
 }
+.increment-button,.decrement-button{
+  height: 20px;
+  width: 28px;
+  border-color:cadetblue;
+  border-style: double;
+  border-radius: 4px;
+  background-color: rgb(224, 175, 133);
+}
+
+.quantity-display{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.increment-button img{
+ font-size: 10px;
+}
+.decrement-button img{
+  font-size: 10px;
+}
