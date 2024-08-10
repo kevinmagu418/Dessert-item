@@ -29,7 +29,7 @@ body{
   width: 100vw;
   height:100vh;
   background-color:
-hsl(13, 31%, 94%)
+hsl(7, 20%, 60%)
   
   ;
   color:black;
@@ -40,16 +40,16 @@ hsl(13, 31%, 94%)
 /* main container with all divs*/
 .container{
     display: grid;
-    grid-template-columns:65vw 30vw ;
-    grid-column-gap:6em ;
+    grid-template-columns:60vw 30vw ;
+    grid-column-gap:5em;
 
 
 }
 /*container with  dessert heading and items container*/
 .dessert{
    display: grid;
-   grid-template-rows:5vh 85vh ;
-   
+   grid-template-rows:5vh 80vh ;
+   grid-column-gap:2em;
   
 }
 
@@ -57,39 +57,43 @@ hsl(13, 31%, 94%)
   font-weight: 600;
   font-size: 20px;
   margin-left:150px ;
-
+  margin-bottom: 20px;
 }
 /*container with all 9 items*/
 .items{
     display: grid;
-    grid-template-columns:25vw 25vw 22vw ;
-    grid-column-gap:20px;
+    grid-template-columns:20vw 20vw 20vw ;
+    
     place-items:center ;
     grid-auto-rows:35vh ;
+  
 }
+/*dessert imagediv*/
 .dessert-image{
 
   display:flex;
   justify-content: center;
   align-items: center;
 }
+/*set image width and height*/
 .image{
   width:20vh;
   height:15vh;
 }
-.item1 ,.item2 ,.item3 ,.item4,.item5,.item6, .item7,.item8,.item9{
+.item{
   
   display:flex;
   flex-direction: column;
-  gap:0.5em;
+  gap: 0.5em;
   align-items: center;
   justify-content: center;
-
-  width:25vw ;
+  
+  flex:2 ;
+  width:20vw;
 }
 #dessertName{
   font-weight: 700;
-  font-size:15px ;
+  font-size:13px ;
 }
 
 #btn{
@@ -100,13 +104,15 @@ hsl(13, 31%, 94%)
   background-color:white;
   border:0.5px white ;
   border-radius:10px;
-  height: 70vh;
+  height:60vh;
   width: 20vw;
   margin-top:20px ;
-  display: grid;
-  grid-template-rows:40% 20% 15%  10% ;
-  grid-row-gap:5px ;
-  
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  border-radius:9px ;
+  border:1px solid hsl(14, 86%, 42%);
+ gap:1em;
 }
 .orderInfo h1{
   font-size: 15px;
@@ -120,14 +126,23 @@ hsl(13, 31%, 94%)
   text-align: center;
 border-radius:15px ;
 border-style: none;
+margin-top:3px ;
 margin-left: 5px;
+width:90%;
+height:13%;
+color: aliceblue;
 }
-
+/*neutral container*/
 .neutral{
-  background-color:rgb(240, 215, 220);
+  background-color:rgb(232, 228, 228);
   font-size:12px ;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left:5px ;
+  height:15%;
+  border-radius:10px ;
 }
 .increment-button,.decrement-button{
   height: 20px;
